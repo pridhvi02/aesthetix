@@ -1,0 +1,74 @@
+body{
+    background-image: url(./assets/blur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.inner-box{
+    margin-top: 150px;
+    height: 600px;
+    width: 800px;
+    /* border: 1px solid ; */
+    box-shadow: 1px 1px 10px 1px;
+}
+
+.van{
+    float: left;
+    background-image: url(./assets/VW.png);
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+}
+
+.form{
+    background-color: white;
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline greenyellow ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form{
+    
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    
+}
+
+textarea{
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    border-style: none;
+    background-color: rgb(214, 212, 212);
+}
+
+input{
+    
+    border-style: none;
+    background-color: rgb(214, 212, 212);
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+}
+
+button{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 35px;
+    padding-top: 2px;
+    font-size: x-large;
+    background-color: rgb(80, 207, 80);
+    color: white;
+    
+}
+
