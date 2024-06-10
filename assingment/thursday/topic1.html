@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<title>Understanding Rowspan in Tables</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 20px;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Rowspan in HTML Tables</h1>
+
+<p>Rowspan is an attribute used in HTML tables to span a cell across multiple rows.</p>
+
+<h2>Example: Merging Header Cells</h2>
+
+<p>Here's a table with a header row using rowspan to combine cells for "sem1" and "sem2":</p>
+
+<table>
+  <tr>
+    <th rowspan="2">subjects</th>
+    <th colspan="2">marks</th>
+  </tr>
+  <tr>
+    <th>sem1</th>
+    <th>sem2</th>
+  </tr>
+  <tr>
+    <td>science</td>
+    <td>25</td>
+    <td>21</td>
+  </tr>
+  <tr>
+    <td>maths</td>
+    <td>25</td>
+    <td>20</td>
+  </tr>
+</table>
+
+<h2>Benefits of Using Rowspan</h2>
+
+<ul>
+  <li>Improves table organization by reducing redundant information.</li>
+  <li>Enhances readability by clearly associating headers with their corresponding data.</li>
+  <li>Saves space by avoiding repeated headers.</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<title>Essential Git Commands on GitHub</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  .command {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .code {
+    font-family: monospace;
+    background-color: #f0f0f0;
+    padding: 5px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Git Commands for Effective Version Control</h1>
+
+<p>This page introduces some fundamental Git commands used on GitHub to manage your code effectively. Remember, you'll be using these commands in your terminal or command prompt.</p>
+
+<h2>1. `git init`</h2>
+
+<p class="command">Initializing a Git Repository</p>
+
+<p>The `git init` command is the first step. It creates a new Git repository within your local project directory. This tells Git to start tracking changes to your code files.</p>
+
+<p class="code">git init</p>
+
+<h2>2. `git add`</h2>
+
+<p class="command">Adding Files to the Staging Area</p>
+
+<p>The `git add` command tells Git which files you want to include in your next commit. You can add individual files or use wildcards like `git add *` to add all modified files in the current directory.</p>
+
+<p class="code">
+  git add filename.txt<br>
+  git add *  (Add all modified files)
+</p>
+
+<h2>3. `git commit`</h2>
+
+<p class="command">Committing Changes to the Repository</p>
+
+<p>The `git commit` command creates a snapshot of your currently staged changes (files added with `git add`).  It's crucial to provide a descriptive commit message summarizing the changes you made.</p>
+
+<p class="code">git commit -m "Added new feature X"</p>
+
+<h2>4. `git push`</h2>
+
+<p class="command">Pushing Committed Changes to GitHub</p>
+
+<p>The `git push` command uploads your local commits to a remote Git repository, typically hosted on GitHub. You'll need to have your GitHub repository set up and linked to your local project for this to work.</p>
+
+<p class="code">git push origin master  (assuming your remote branch is named 'master')</p>
+
+<h2>Additional Notes</h2>
+
+* You can use `git status` to check the status of your working directory, staged files, and uncommitted changes.
+* Consider using `git branch` to manage different development branches within your project.
+* Refer to the official Git documentation for more advanced commands and functionalities: https://www.git-scm.com/
+
+By mastering these foundational Git commands, you can effectively manage your code versions and collaborate seamlessly on projects using GitHub.
+</body>
+</html>
+
+This page explains the purpose of each command, provides code examples, and includes additional notes for further exploration. Remember to replace `filename.txt` with the actual name of your file and adjust the remote branch name (`master` in the example) if needed.

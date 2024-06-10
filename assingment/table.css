@@ -1,0 +1,29 @@
+.timetable{
+    text-align: center;
+}
+
+table{
+    
+    width: 50%;
+    border: solid 1px black;
+    margin: auto;
+}
+
+th{
+    height: 20px;
+    border: solid 1px black;
+    background-color: rgb(171, 161, 179);
+
+}
+
+td{
+    height: 20px;
+    border-style: outset;
+    border-collapse: collapse;
+    
+    
+}
+
+a{
+    text-decoration: none;
+}

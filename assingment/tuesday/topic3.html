@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<title>Exploring Iframes</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  .iframe-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 20px auto;
+    width: 50%;
+  }
+</style>
+</head>
+<body>
+
+<h1>Understanding Iframes</h1>
+
+<p>Iframes (inline frames) are HTML elements that embed another webpage or resource within the current document. They allow you to display external content seamlessly within your page.</p>
+
+<h2>Iframe Attributes</h2>
+
+<ul>
+  <li><strong>`src` (Required):</strong> This attribute specifies the URL of the content you want to embed. For example: `<iframe src="https://www.wikipedia.com/"></iframe>`</li>
+  <li><strong>`width` and `height` (Optional):</strong> These attributes define the dimensions (width and height) of the iframe in pixels.</li>
+  <li><strong>`frameborder` (Optional):</strong> This attribute controls the display of a border around the iframe. Set it to `0` to remove the border or a specific pixel value for border width.</li>
+  <li><strong>`scrolling` (Optional):</strong> This attribute controls whether scrollbars appear within the iframe if the content overflows the specified dimensions. Values can be `auto` (default), `yes`, `no`, or a custom scrollbar style.</li>
+</ul>
+
+<h2>Example Iframe</h2>
+
+<div class="iframe-container">
+  <iframe src="https://www.wikipedia.org/wiki/Iframe" width="400" height="300" frameborder="0" ></iframe>
+</div>
+
+<h2>Basic Iframe Styling (Optional)</h2>
+
+<p>You can use CSS to style the iframe container, such as adding borders or padding.</p>
+
+</body>
+</html>
