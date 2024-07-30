@@ -1,0 +1,140 @@
+
+
+body{
+  margin: 0;  
+}
+
+.container{
+    margin-top: 5%;
+    width: 80%;
+    height: auto;
+    position : absolute;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgb(242, 236, 236);
+    
+    /* box-shadow: 1px 5px 15px 1px rgb(73, 65, 65); */
+}
+
+.left{
+    position: sticky;
+    top: 50px;
+    margin-top: 50px;
+    width: 10%;
+    height: 100%;
+    flex-direction: column;
+    
+
+}
+
+.container .left img{
+
+    width: 77px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.pic{
+    position: sticky;
+    top: 50px;
+    margin-top: 50px;
+    position: sticky;
+
+}
+
+.pic img{
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 60vh;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#name{
+    font-weight: 800;
+    font-size: 20px;
+}
+#discont{
+    text-decoration:line-through;
+}
+
+.ash{
+    color: grey;
+}
+.sizes{
+    margin-top: 20%;
+    width: 100%;
+    height: 40%;
+
+}
+table tr{
+    padding: 10px;
+}
+td{
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid silver;
+}
+.sizes span{
+    font-weight: 800;
+}
+
+.sizes .move-right{
+    padding-left:40% ;
+    color: grey;
+}
+
+.cartBtn{
+    margin-top: 50px;
+    margin-left: 10%;
+    width: 50%;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    font-size: large;
+    font-weight: 800;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.fav{
+    border: 0.5px solid grey;
+    margin-left: 10%;
+    width: 50%;
+    height: 50px;
+    color:black;
+    background-color: white;
+    border-radius: 50px;
+    font-size: large;
+    font-weight: 800;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.text{
+    width: 80%;
+}
+
+.main-pic:hover{
+    transform: scale(2,2);
+}

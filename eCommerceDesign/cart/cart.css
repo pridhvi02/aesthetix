@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+     
+  }
+  
+.container{
+      /* margin-top: 5%;
+      width: 80%;
+      height: 81%;
+      position : absolute;
+      display: flex;
+      left: 50%;
+      transform: translate(-50%);
+      background-color: rgb(242, 236, 236);
+      border: 1px solid black; */
+      width: 80%;
+      height: 80vh auto;
+      border: 1px solid black;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%);
+      
+      /* box-shadow: 1px 5px 15px 1px rgb(73, 65, 65); */
+  }
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart-info img{
+    width: 77px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+th{
+    text-align: left;
+    padding :5px;
+    color: white;
+    background: #8a7f7e;
+}
+
+td{
+    padding: 10px 5px;
+}
+
+
+td input{
+   width: 40px;
+    height: 30px;
+    padding: 5%;
+}
+
+td a{
+    color:#8a7f7e
+}
+
+.description{
+    margin-left: 20px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+    border-top: 3px solid #8a7f7e;
+    width: 100%;
+    max-width: 450px;
+}
+
+th:last-child{
+    text-align: right;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+.Btn{
+    display: flex;
+    justify-content: end;
+    margin: 50px;
+}
+
+.Btn .checkoutBtn{
+    color: white;
+    background-color:#8a7f7e;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    
+    
+
+}
