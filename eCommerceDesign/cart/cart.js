@@ -1,29 +1,24 @@
-operation=(sign)=>{
-    var qnt = document.getElementById('Quantity').innerHTML
-    console.log("running");
-    console.log(document.getElementById('subTotal').innerHTML);
-    switch (sign)
-     {
-        
-        case '+': 
-                 document.getElementById('Quantity').innerHTML= Number(qnt) + 1;
-                 document.getElementById('Total').innerHTML = (document.getElementById('subTotal').innerHTML) * (document.getElementById('Quantity').innerHTML)
-                 document.getElementById('FullTotal').innerHTML = Number(document.getElementById('Total').innerHTML) + Number(document.getElementById('tax').innerHTML)
-                 break;
-        
-        case '-': 
-                document.getElementById('Quantity').innerHTML= Number(qnt) - 1;
-                document.getElementById('FullTotal').innerHTML = (document.getElementById('subTotal').innerHTML) * (document.getElementById('Quantity').innerHTML)
-                document.getElementById('FullTotal').innerHTML = Number(document.getElementById('Total').innerHTML) - Number(document.getElementById('tax').innerHTML)
-                
-                 break;
+operation = (sign) => {
+    var qnt = document.getElementById('Quantity').innerHTML;
+    var subTotal = Number(document.getElementById('subTotal').innerHTML);
+    var tax = Number(document.getElementById('tax').innerHTML);
 
-        default: console.log(value)
+    switch (sign) {
+        case '+':
+            document.getElementById('Quantity').innerHTML = Number(qnt) + 1;
+            document.getElementById('Total').innerHTML = subTotal * (Number(qnt) + 1);
+            document.getElementById('FullTotal').innerHTML = Number(document.getElementById('Total').innerHTML) + tax;
+            break;
 
-                  
+        case '-':
+            if (Number(qnt) > 1) { // Prevent quantity from going below 1
+                document.getElementById('Quantity').innerHTML = Number(qnt) - 1;
+                document.getElementById('Total').innerHTML = subTotal * (Number(qnt) - 1);
+                document.getElementById('FullTotal').innerHTML = Number(document.getElementById('Total').innerHTML) + tax;
+            }
+            break;
 
-            
-          
+        default:
+            console.log(value);
     }
-
-} 
+};
